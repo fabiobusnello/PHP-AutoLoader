@@ -1,5 +1,17 @@
 <?php
-require_once 'autoload.php';
+
+/**
+ * autoload com composer
+ * comando = c:\diretório_do_projeto\composer dump-autoload
+ */
+//require_once 'autoload.php';
+
+use App\vendas\Usuario;
+use App\vendas\Produto;
+use App\vendas\Compra;
+use App\Estoque\Estoque;
+
+require_once 'vendor/autoload.php';
 
 $u = new Usuario();
 
@@ -20,3 +32,8 @@ $c->cadastrar(
 );
 
 echo $c->imprimir();
+
+$e = new Estoque();
+echo $e->getTotal();
+
+$pE = new App\Estoque\Produto();
