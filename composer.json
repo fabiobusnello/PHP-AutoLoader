@@ -1,0 +1,14 @@
+{
+    "name": "donti/teste1-php",
+    "description": "teste1",
+    "type": "project",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Fábio Busnello",
+            "email": "fabiocouto22@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
